@@ -5,9 +5,15 @@
 .posts-list-item {
   list-style: none;
   padding: 0.4em 0;
+  margin-top: 10px;
+  list-style-type: disc;
 
   &:not(:last-child) {
     border-bottom: 0px dashed rgba(255, 255, 255, 0.3);
+  }
+
+  ::marker {
+    color: $darkest-color;
   }
 }
 
