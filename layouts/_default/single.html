@@ -7,15 +7,12 @@
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
           {{ .PublishDate.Format "2.01.2006" }}
-        </div>
-        {{- if gt .Lastmod .PublishDate }}
-          <div>
+          &emsp;
+          {{- if gt .Lastmod .PublishDate }}
             {{ partial "icon.html" (dict "ctx" $ "name" "rotate-ccw") }}
             {{ .Lastmod.Format "2.01.2006" }}
-          </div>
-        {{- end }}
-
-        <div>
+          {{- end }}
+          &emsp;
           {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
           {{ .ReadingTime }} min read
         </div>
