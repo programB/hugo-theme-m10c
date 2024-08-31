@@ -11,6 +11,18 @@
   border: 0.5rem solid $primary-color;
 }
 
+.app-header-menu {
+  line-height: 2.5;
+}
+
+.app-header-menu-item {
+  background-color: $primary-color;
+  color: $darkest-color;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 1em;
+}
+
 .app-container {
   padding: 2.5rem;
 }
