@@ -5,7 +5,7 @@
       {{- if ne .Type "page" }}
       <div class="post-meta">
         <div>
-          {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+          {{ partial "icon.html" (dict "ctx" $ "name" "pen-tool") }}
           {{ .PublishDate.Format "2.01.2006" }}
           &emsp;
           {{- if gt .Lastmod .PublishDate }}

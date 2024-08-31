@@ -6,7 +6,7 @@
         <li class="posts-list-item">
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
-            {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+            {{ partial "icon.html" (dict "ctx" $ "name" "pen-tool") }}
             {{ .PublishDate.Format "2.01.2006" }}
             {{- if gt .Lastmod .PublishDate }}
               <span class="posts-list-item-separator">-</span>
