@@ -8,6 +8,11 @@
           <span class="posts-list-item-description">
             {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
             {{ .PublishDate.Format "2.01.2006" }}
+            {{- if gt .Lastmod .PublishDate }}
+              <span class="posts-list-item-separator">-</span>
+              {{ partial "icon.html" (dict "ctx" $ "name" "rotate-ccw") }}
+              {{ .Lastmod.Format "2.01.2006" }}
+            {{- end }}
             <span class="posts-list-item-separator">-</span>
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
             {{ .ReadingTime }} min read
